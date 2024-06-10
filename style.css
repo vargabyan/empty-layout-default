@@ -1,0 +1,185 @@
+@font-face {
+    font-family: Inter;
+    src: url('/fonts/Inter/Inter-VariableFont_slnt,wght.ttf');
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    color: #383838;
+    font-family: Inter;
+    background: #F5F5F5;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+:root {
+    --3: #9E9EA2;
+    --Secondary-100: #1C1C1C;
+    --Secondary-20: #D2D2D2;
+}
+
+.core-container {
+    max-width: 1440px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 40px;
+    padding-left: 40px;
+    min-width: 328px;
+}
+
+.site-header {
+    font-family: Unbounded;
+    font-size: clamp(24px, 3vw, 34px);
+    font-weight: 700;
+    line-height: 115%;
+}
+
+
+
+
+.breadcrumb ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style-type: none;
+    white-space: nowrap;
+}
+
+.breadcrumb_home {
+    display: flex;
+    gap: 6px;
+}
+
+.breadcrumb_home:before {
+    display: block;
+    content: '';
+    width: 24px;
+    height: 24px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M21 21V9L12 2.25L3 9V21L21 21Z' stroke='%2301071A' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+.breadcrumb_line {
+    display: block;
+    content: '';
+    width: 32px;
+    height: 32px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32' fill='none'%3E%3Cg id='slash'%3E%3Cpath id='Vector 7' d='M14.5 24H12.5L16.5 7H18.5L14.5 24Z' fill='%23E8E8E8'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.breadcrumb_home,
+.breadcrumb_item {
+    color: var(--Secondary-100);
+    font-size: 16px;
+    line-height: 26px;
+    text-decoration: none;
+}
+
+.breadcrumb  li:last-child .breadcrumb_item {
+    color: var(--Secondary-20);
+}
+
+
+
+
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 992px) {
+
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 570px) {
+
+    .core-container {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+
+
+
+    .breadcrumb {
+        margin-top: 12px;
+    }
+
+    .breadcrumb ul {
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        overflow-x: auto;
+    }
+
+    .breadcrumb ul::-webkit-scrollbar {
+        display: none;
+    }
+
+    .breadcrumb_home:before {
+        width: 24px;
+        height: 24px;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M21 21V9L12 2.25L3 9V21L21 21Z' stroke='%231C1C1C' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    }
+
+    .breadcrumb_line {
+        width: 16px;
+        height: 16px;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M8 13H7L9 2H10L8 13Z' fill='%23E8E8E8'/%3E%3C/svg%3E");
+    }
+
+    .breadcrumb_item {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+
+
+}
+
+
+@media (hover: hover) {
+
+}
