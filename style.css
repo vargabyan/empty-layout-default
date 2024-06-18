@@ -76,7 +76,7 @@ table {
     font-family: Unbounded;
     font-size: clamp(24px, 3vw, 34px);
     font-weight: 700;
-    line-height: 115%;
+    line-height: clamp(80%, 3vw, 115%);
 }
 
 
