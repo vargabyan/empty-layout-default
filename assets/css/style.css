@@ -60,6 +60,11 @@ table {
     --3: #9E9EA2;
     --Secondary-100: #1C1C1C;
     --Secondary-20: #D2D2D2;
+    --screen-xxl: 1399px;
+    --screen-xl: 1199px;
+    --screen-lg: 991px;
+    --screen-md: 767px;
+    --screen-sm: 575px;
 }
 
 .core-container {
@@ -126,16 +131,19 @@ table {
 
 
 
-@media (max-width: 1200px) {
+@media (max-width: --screen-xxl) {
 
 }
-@media (max-width: 992px) {
+@media (max-width: --screen-xl) {
 
 }
-@media (max-width: 768px) {
+@media (max-width: --screen-lg) {
 
 }
-@media (max-width: 570px) {
+@media (max-width: --screen-md) {
+
+}
+@media (max-width: --screen-sm) {
 
     .core-container {
         padding-right: 16px;
